@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263b46;
+    background-color: #f4f9fb;
+}
+
+header {
+    padding: 22px 12px;
+    text-align: center;
+    color: white;
+    background-color: #009fd0;
+}
+
+header h1 { margin: 0; }
+header p { margin: 4px 0 0; }
+
+nav {
+    padding: 10px;
+    text-align: center;
+    background-color: #087da7;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 9px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #087da7;
+    background-color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 25px auto;
+}
+
+h2 { color: #087da7; }
+h3 { color: #123247; }
+
+.welcome, .note {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #009fd0;
+    background-color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.card, .role {
+    padding: 17px;
+    border: 1px solid #d4e5eb;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card h3 { margin-top: 0; }
+
+.card a, .button {
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 3px;
+    color: white;
+    background-color: #009fd0;
+    text-decoration: none;
+}
+
+.card a:hover, .button:hover { background-color: #087da7; }
+
+.structure { text-align: center; }
+.role { text-align: left; }
+.top-role, .manager {
+    display: inline-block;
+    min-width: 220px;
+    text-align: center;
+}
+.manager {
+    border-color: #009fd0;
+    background-color: #e3f7fc;
+}
+.down { color: #009fd0; font-size: 24px; margin: 5px; }
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+li { margin-bottom: 8px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #c9dce3;
+    text-align: left;
+}
+th { background-color: #dff5fb; }
+
+footer {
+    margin-top: 35px;
+    padding: 16px;
+    color: white;
+    background-color: #123247;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+    .cards, .role-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 550px) {
+    .cards, .role-grid { grid-template-columns: 1fr; }
+    main { width: 94%; }
+    nav a { display: block; }
+}
